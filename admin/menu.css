@@ -1,0 +1,54 @@
+
+body, html {
+	font-family:Arial, Helvetica, sans-serif;	
+	margin:0;
+}
+* {
+	box-sizing:border-box;	
+}
+#header {
+    background-color:rgb(91, 189, 245);
+    text-align:center;	
+	padding:50px 0;
+    
+}
+/* Tạo kiểu vùng chứa các liên kết menu */
+.menu {
+	background-color:rgba(37, 168, 212, 0.462);
+	overflow:hidden;
+	width:100%;	
+}
+/* Tạo kiểu cho các liên kết */
+.menu a {
+	float:left;
+	font-size:18px;
+	color:rgb(54, 128, 224);
+	text-decoration:none;
+	text-align:center;
+	padding:12px 14px;
+}
+/* Thay đổi màu nền khi di chuột */
+.menu a:hover:not(.active) {
+	background-color:#999;	
+}
+/* Thay đổi border khi liên kết đang kích hoạt */
+.menu a.active {
+	background-color:#428bca;
+	color:rgb(241, 130, 197);	
+}
+/* Tạo kiểu cho nội dung chính */
+.content {
+	padding:20px;
+	height:2000px;
+}
+.sticky {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;	
+}
+h2{
+	text-align: center;
+	color: rgb(0, 174, 255);
+	margin: 15px;
+}
