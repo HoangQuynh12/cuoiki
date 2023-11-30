@@ -26,12 +26,12 @@
                 move_uploaded_file($file['tmp_name'], $upload_dir . $file_name);
 
                 $conn = new mysqli("localhost", "root", "", "cuoiki");
-                $sql = "INSERT INTO phukien (TenSP, SoLuong, Image, Mota, Gia, idLoai) VALUES ('$tensp','$soluong','$file_name', '$mota', '$gia', '$loaisp')";
+                $sql = "INSERT INTO sanpham (TenSP, SoLuong, Image, Mota, Gia, idLoai) VALUES ('$tensp','$soluong','$file_name', '$mota', '$gia', '$loaisp')";
                 $query = mysqli_query($conn, $sql);
 
                 if ($query) {
                     echo "Thêm sản phẩm thành công.";
-                    header('Location: loai.php');
+                    header('Location: tatcasp.php');
                     exit(); // Make sure to exit after header to prevent further execution
                 } else {
                     echo "Thêm sản phẩm thất bại: " . mysqli_error($conn);

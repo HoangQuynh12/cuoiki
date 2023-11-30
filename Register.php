@@ -264,7 +264,7 @@
 				<div class="col-lg-12">
 					<div class="footer_nav_container">
 						<div class="credits">
-							Thực hiện bởi nhóm 4G
+							Thực hiện bởi ...
 						</div>
 					</div>
 				</div>
@@ -277,11 +277,11 @@
   require_once('database/config.php');
   require_once('database/dbhelper.php');
   if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    if (isset($_POST['btdk']) && $_POST['username'] != '' && $_POST['password'] != '' && $_POST['confirm-password']!='' && $_POST['email']!='' ){
+    if (isset($_POST['btdk']) && $_POST['username'] != '' && $_POST['password'] != '' && $_POST['confirm-password']!='' ){
       $username = $_POST['username'];
       $pass = $_POST['password'];
       $repass = $_POST['confirm-password'];
-	  $email = $_POST['email'];
+	  
       //kiểm tra trùng paswword không
       if ($pass != $repass) {
         echo '<script language="javascript">

@@ -26,7 +26,7 @@ if(isset($_POST['idsp'], $_POST['tensp'], $_POST['soluong'], $_POST['gia'], $_PO
     }
 
     // Sử dụng Prepared Statement để tránh tấn công SQL Injection
-    $sql = "UPDATE phukien SET TenSP=?, idLoai=?, SoLuong=?, Gia=?, Mota=?, Image=? WHERE idSP=?";
+    $sql = "UPDATE sanpham SET TenSP=?, idLoai=?, SoLuong=?, Gia=?, Mota=?, Image=? WHERE idSP=?";
     $stmt = mysqli_prepare($conn, $sql);
 
     if ($stmt) {

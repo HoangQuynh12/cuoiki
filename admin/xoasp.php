@@ -9,7 +9,7 @@
         // 1. Kết nối
         $conn = mysqli_connect("localhost", "root", "", "cuoiki");
         //2. Truy vấn
-        $sql = "DELETE FROM phukien WHERE idSP = " . $_GET['ids'];
+        $sql = "DELETE FROM sanpham WHERE idSP = " . $_GET['ids'];
         echo $sql;
         $kq = mysqli_query($conn, $sql);
         header('Location: tatcasp.php');

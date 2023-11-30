@@ -163,12 +163,12 @@ require_once('database/dbhelper.php');
 						</div>
 						<nav class="navbar">
 							<ul class="navbar_menu">
-								<li><a href="index.html">Trang chủ</a></li>
-								<li><a href="categories.html">Shop</a></li>
+								<li><a href="index.php">Trang chủ</a></li>
+								<li><a href="shop.php">Shop</a></li>
 								<!-- <li><a href="#">Khuyến mãi</a></li>
 								<li><a href="#">pages</a></li>
 								<li><a href="#">Blog</a></li> -->
-								<li><a href="contact.html">Liên hệ</a></li>
+								<li><a href="contact.php">Liên hệ</a></li>
 							</ul>
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -210,11 +210,11 @@ require_once('database/dbhelper.php');
 					</ul>
 				</li>
 				<li class="menu_item"><a href="index.php">Trang chủ</a></li>
-                <li class="menu_item"><a href="categories.html">Sản phẩm</a></li>
+                <li class="menu_item"><a href="shop.php">Sản phẩm</a></li>
 				<!-- <li class="menu_item"><a href="#">Khuyến mãi</a></li>
 				<li class="menu_item"><a href="#">Pages</a></li>
 				<li class="menu_item"><a href="#">Blog</a></li> -->
-				<li class="menu_item"><a href="contact.html">Liên hệ</a></li>
+				<li class="menu_item"><a href="contact.php">Liên hệ</a></li>
 			</ul>
 		</div>
 	</div>
@@ -246,9 +246,9 @@ require_once('database/dbhelper.php');
 				<div class="col-lg-6">
 					<div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
 						<ul class="footer_nav">
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">FAQs</a></li>
-							<li><a href="contact.html">Liên hệ</a></li>
+							<li><a href="blog.php">Blog</a></li>
+							<li><a href="about.php">FAQs</a></li>
+							<li><a href="contact.php">Liên hệ</a></li>
 						</ul>
 					</div>
 				</div>
@@ -291,7 +291,7 @@ require_once('database/dbhelper.php');
         if ($username == 'gw' && $password == 'gw123') {
             echo '<script language="javascript">
                 //alert("GW Store"); 
-                window.location = "admin/uploads/menu.php";
+                window.location = "admin/trangchu.php";
             </script>';
             $tendangnhap = trim(strip_tags($_POST['username']));
             $matkhau = trim(strip_tags($_POST['password']));
